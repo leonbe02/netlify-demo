@@ -6,6 +6,7 @@ const fs = require('fs-extra');
 
 nunjucks.configure('.', { autoescape: true });
 
+fs.ensureDirSync('dist');
 fs.copyFileSync('_redirects', 'dist/_redirects');
 
 glob('pages/**/*.njk', (err, files) => {
