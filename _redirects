@@ -1,1 +1,1 @@
-/games/detail/:slug /.netlify/functions/game-detail
+/games/detail/:slug /.netlify/functions/game-detail 200
