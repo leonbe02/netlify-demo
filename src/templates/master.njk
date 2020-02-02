@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{language}}" data-locale="{{locale}}" data-region="{{region}}">
+	<head>
+		<meta charset="utf-8">
+		<title>{{meta.title}}</title>
+		<meta name="description" content="{{meta.description}}">
+		<meta property="og:title" content="{{og.title or meta.title}}">
+		<meta property="og:description" content="{{og.description or meta.description}}">
+		<meta name="twitter:card" content="summary_large_image">
+		<link rel="stylesheet" href="https://use.typekit.net/gws3huc.css">
+		{% block styles %}{% endblock %}
+	</head>
+	<body>
+		<header>Nintendo</header>
+		<main>
+			{% block main %}{% endblock %}
+		</main>
+		<footer>
+			<div class="legal">
+				<p>{{footer.trademark}}</p>
+				{% block legal %}{% endblock %}
+			</div>
+		</footer>
+		{% block scripts %}{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "netlify-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.6",
+    "nunjucks": "^3.2.0"
+  }
+}
