@@ -1,0 +1,9 @@
+{
+	"name": "netlify-demo-game-detail",
+	"version": "1.0.0",
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"nunjucks": "^3.2.0"
+	}
+}
