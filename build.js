@@ -8,8 +8,8 @@ nunjucks.configure('.', { autoescape: true });
 
 fs.ensureDirSync('dist');
 fs.copyFileSync('_redirects', 'dist/_redirects');
-fs.copySync('templates', 'functions/game-detail/templates')
-fs.copySync('node_modules', 'functions/game-detail/node_modules'))
+fs.copySync('templates', 'functions/game-detail/templates');
+fs.copySync('node_modules', 'functions/game-detail/node_modules');
 
 glob('pages/**/*.njk', (err, files) => {
 	const io = [];
